@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Bhalotia | Building the Future of Total Rewards</title>
+    <title>Abhishek Bhalotia | Compensation Strategy & Internal Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
             overflow-x: hidden;
         }
 
@@ -487,7 +487,7 @@
         .section-subtitle {
             font-size: 1.1rem;
             color: var(--text-secondary);
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
@@ -516,7 +516,7 @@
         .story-content p {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             line-height: 1.8;
         }
 
@@ -685,7 +685,7 @@
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: 2rem;
             transition: all 0.3s ease;
             width: 100%;
         }
@@ -946,7 +946,7 @@
         }
 
         .modal-details {
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
             line-height: 1.8;
             margin-bottom: 1.5rem;
@@ -1283,6 +1283,187 @@
             color: var(--accent);
         }
 
+        /* Context Banner */
+        .context-banner {
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .context-banner-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            border-left: 3px solid var(--accent);
+            background: var(--bg-card);
+            border-radius: 0 12px 12px 0;
+            font-size: 0.95rem;
+            color: var(--text-tertiary);
+            line-height: 1.7;
+        }
+
+        .context-banner-inner strong {
+            color: var(--text-secondary);
+        }
+
+        /* Philosophy Section */
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .philosophy-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .philosophy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .philosophy-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .philosophy-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .philosophy-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .philosophy-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        .philosophy-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Testimonials Section */
+        .testimonial-carousel {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding: 1rem 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .testimonial-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            min-width: 340px;
+            max-width: 380px;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-quote {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            position: relative;
+            padding-left: 1rem;
+            border-left: 2px solid var(--accent);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-glow), var(--gradient-2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .testimonial-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .testimonial-role {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+        }
+
+        .testimonial-context {
+            font-size: 0.75rem;
+            color: var(--accent);
+            margin-top: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border), var(--accent), var(--border), transparent);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.5;
+        }
+
+        /* Hero subtitle line */
+        .hero-subtitle-line {
+            font-size: 1rem;
+            color: var(--text-tertiary);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.15s forwards;
+            opacity: 0;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-subtitle-line span {
+            color: var(--text-secondary);
+        }
+
         /* Animations */
         .reveal {
             opacity: 0;
@@ -1315,6 +1496,10 @@
             }
 
             .edu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .philosophy-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -1362,6 +1547,10 @@
             }
 
             .edu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .philosophy-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1438,6 +1627,7 @@
                 <li><a href="#story">Story</a></li>
                 <li><a href="#experience">Journey</a></li>
                 <li><a href="#work">Work</a></li>
+                <li><a href="#testimonials">Impact</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Connect</a></li>
             </ul>
@@ -1451,6 +1641,7 @@
             <a href="#story">Story</a>
             <a href="#experience">Journey</a>
             <a href="#work">Work</a>
+            <a href="#testimonials">Impact</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Connect</a>
         </div>
@@ -1466,14 +1657,11 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="hero-badge-dot"></span>
-                    <span>Open to Global Rewards & AI Product roles</span>
-                </div>
                 <h1 class="hero-name">
                     <span class="hero-name-gradient">Abhishek Bhalotia</span>
                 </h1>
-                <p class="hero-tagline">I turn 5-day manual processes into instant, zero-error systems.</p>
+                <p class="hero-subtitle-line"><span>Compensation Strategy Partner</span> · <span>Product Builder</span> · <span>20+ Internal Tools Shipped</span></p>
+                <p class="hero-tagline">I build the internal products my team actually uses — not decks, not proposals, products.</p>
                 <div class="hero-typing">
                     <span class="typing-text" id="typingText"></span>
                 </div>
@@ -1493,12 +1681,12 @@
                 </div>
                 <div class="stats-ticker">
                     <div class="stat-item">
-                        <div class="stat-value" data-target="50">$0M+</div>
-                        <div class="stat-label">Cost Savings Enabled</div>
+                        <div class="stat-value" data-target="20">0+</div>
+                        <div class="stat-label">Internal Tools Shipped</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-value" data-target="98">0%</div>
-                        <div class="stat-label">Process Time Reduced</div>
+                        <div class="stat-value" data-target="50">$0M+</div>
+                        <div class="stat-label">Decisions Supported</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-value" data-target="100">0%</div>
@@ -1506,12 +1694,21 @@
                     </div>
                     <div class="stat-item">
                         <div class="stat-value" data-target="98">0</div>
-                        <div class="stat-label">Countries Scaled</div>
+                        <div class="stat-label">Countries (Pfizer IC)</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Context Banner -->
+    <div class="context-banner">
+        <div class="container">
+            <div class="context-banner-inner reveal">
+                Opendoor is in the middle of a company-wide transformation (<strong>OD2.0</strong>) — rethinking every process around software and automation. The People team is no exception. I build the internal tools that make compensation operations faster, more accurate, and less dependent on manual work.
+            </div>
+        </div>
+    </div>
 
     <!-- Story Section -->
     <section id="story" class="story-section">
@@ -1519,8 +1716,8 @@
             <div class="story-grid">
                 <div class="story-content reveal">
                     <h2>I build <span>products that save millions</span> and <span>systems that scale globally</span></h2>
-                    <p>Most compensation professionals analyze data. I engineer the infrastructure that makes analysis obsolete. In 6+ years, I've shipped 20+ internal products that replaced six-figure SaaS tools, automated workflows that saved 5 days per cycle, and built AI copilots now used company-wide.</p>
-                    <p>My track record: $50M+ in strategic savings through dynamic planning models. 98-country IC operations at Pfizer with zero defects. Performance calibration tools that managers call "SaaS-grade." I don't just support the business—I build the systems the business runs on.</p>
+                    <p>Most compensation work lives in spreadsheets that get emailed around. I take those same problems and turn them into products — tools with interfaces, validation gates, and live data feeds that my team uses every day. Over the past few years I've shipped 20+ internal tools that replaced manual processes, cut cycle times from days to minutes, and removed entire categories of human error.</p>
+                    <p>At Opendoor, I'm the person cross-functional teams come to when something needs to actually work — whether that's equity files Legal needs for signature today, a Workday data load that needs 100% validation before go-live, or the headcount planning model the CEO and CFO use for $50M+ decisions. I don't just support the business — I build the systems the business runs on.</p>
                     <div class="story-highlights">
                         <div class="story-highlight">
                             <div class="story-highlight-icon">💰</div>
@@ -1539,8 +1736,8 @@
                         <div class="story-highlight">
                             <div class="story-highlight-icon">🤖</div>
                             <div class="story-highlight-content">
-                                <h4>AI-First Builder</h4>
-                                <p>Glean agents, LLM workflows, automated email systems at scale</p>
+                                <h4>Automation-First Builder</h4>
+                                <p>Glean agents, custom Gems, automated email systems used team-wide</p>
                             </div>
                         </div>
                     </div>
@@ -1568,13 +1765,48 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
+    <!-- Philosophy Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">💡 My Approach</div>
+                <h2 class="section-title reveal">How I Think About Building</h2>
+                <p class="section-subtitle reveal">Three principles that guide every product I ship</p>
+            </div>
+
+            <div class="philosophy-grid">
+                <div class="philosophy-card reveal">
+                    <div class="philosophy-icon">🏗️</div>
+                    <h3>Build, Don't Buy</h3>
+                    <p>Every SaaS tool started as someone's spreadsheet. I build internal products that match commercial quality — then iterate faster because there's no vendor in the way. My calibration tool was called "SaaS-grade" by the managers who use it daily.</p>
+                </div>
+
+                <div class="philosophy-card reveal">
+                    <div class="philosophy-icon">🎯</div>
+                    <h3>Zero-Error Standard</h3>
+                    <p>In compensation, a single mistake erodes trust. Every system I ship has built-in validation gates, audit trails, and automated QA. My team treats my sign-off as the standard for go-live quality — because 99.9% accuracy isn't good enough.</p>
+                </div>
+
+                <div class="philosophy-card reveal">
+                    <div class="philosophy-icon">🤖</div>
+                    <h3>Automate the Repeatable</h3>
+                    <p>If someone on the team does the same lookup, calculation, or email more than twice, I build a tool for it. Glean agents that answer comp questions, Gemini Gems that streamline earnings queries, email engines that send 25 personalized PDFs per minute — the goal is to free people for the work that actually requires judgment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
     <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <div class="section-header">
                 <div class="section-badge">📍 The Journey</div>
-                <h2 class="section-title reveal">From 98 Countries to AI-First Products</h2>
-                <p class="section-subtitle reveal">Building global compensation infrastructure, one zero-error system at a time</p>
+                <h2 class="section-title reveal">Where I've Built</h2>
+                <p class="section-subtitle reveal">From global pharma operations to building internal products at a public tech company</p>
             </div>
 
             <div class="timeline">
@@ -1584,9 +1816,9 @@
                         <div class="timeline-date">Dec 2025 → Present</div>
                         <div class="timeline-company">Opendoor Technologies</div>
                         <h3 class="timeline-title">Compensation Strategy Partner</h3>
-                        <p class="timeline-description">Architecting AI-first people products for OD2.0. Leading Poland market entry ($0→live), FY26 annual cycle design, equity governance for EGC/Board, sales incentive engine (100% accuracy), and Workday API automation. Built AI recruiting copilot deployed company-wide.</p>
+                        <p class="timeline-description">Owning comp strategy and internal product development for OD2.0. Led Poland market entry from zero to live comp structure. Designed FY26 annual cycle, equity governance for EGC/Board, and sales incentive engine with 100% payout accuracy. Built recruiting copilot and Comp Bot now used company-wide. The go-to person for evergreen grants — Legal, Stock, and Comp coordinate through my analysis before moving to signature.</p>
                         <div class="timeline-tags">
-                            <span class="tag">AI Products</span>
+                            <span class="tag">Internal Products</span>
                             <span class="tag">API Integration</span>
                             <span class="tag">$50M+ Impact</span>
                         </div>
@@ -1614,11 +1846,11 @@
                         <div class="timeline-date">Jan 2023 → Aug 2023</div>
                         <div class="timeline-company">ZS Associates (Pfizer Global)</div>
                         <h3 class="timeline-title">Decision Analytics Associate</h3>
-                        <p class="timeline-description">Primary owner of ZAIDYN IC Design system for Pfizer Global across 4 regions and 98 countries. Led development, testing, and multi-country data validation. First-time IC Design work—mastered in weeks. 100% accurate deliverables with zero defects across all cycles.</p>
+                        <p class="timeline-description">Key POC and primary owner of Pfizer's ZAIDYN IC Design system across 4 regions. Developed lean, standardized calculation methodologies for quota setting, incentive calcs, and awards & contests — systems designed once, then scaled to 98 countries without rework. Mastered IC Design from scratch in weeks; delivered every cycle with zero defects.</p>
                         <div class="timeline-tags">
-                            <span class="tag">98 Countries</span>
-                            <span class="tag">ZAIDYN IC</span>
-                            <span class="tag">100% Accuracy</span>
+                            <span class="tag">Scalable IC Design</span>
+                            <span class="tag">ZAIDYN Platform</span>
+                            <span class="tag">Zero Defects</span>
                         </div>
                     </div>
                 </div>
@@ -1629,7 +1861,7 @@
                         <div class="timeline-date">Apr 2021 → Dec 2022</div>
                         <div class="timeline-company">ZS Associates (Pfizer Canada)</div>
                         <h3 class="timeline-title">Business Operations Associate</h3>
-                        <p class="timeline-description">End-to-end ownership of Pfizer Canada IC operations—Quota Setting, Contest & Awards, bonus modules. Built automated payout calculations, governance frameworks, and cross-functional processes. Selected to mentor 5 team members. Foundation for product-building approach.</p>
+                        <p class="timeline-description">End-to-end ownership of Pfizer Canada IC operations — quota setting, contests & awards, bonus modules. Built automated payout calculations and governance frameworks that became the templates other markets adopted. Selected to mentor 5 team members. This is where I started treating every process as a product problem.</p>
                         <div class="timeline-tags">
                             <span class="tag">Pfizer Canada</span>
                             <span class="tag">Mentorship</span>
@@ -1646,13 +1878,13 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-badge">🚀 The Work</div>
-                <h2 class="section-title reveal">Products That Replace SaaS</h2>
-                <p class="section-subtitle reveal">20+ custom tools driving $50M+ decisions, 98%+ time savings, and 100% accuracy at scale</p>
+                <h2 class="section-title reveal">Things I've Built</h2>
+                <p class="section-subtitle reveal">Internal tools that my team and cross-functional partners use every day — not prototypes, production systems</p>
             </div>
 
             <div class="work-filters reveal" id="filters">
                 <button class="filter-btn active" data-filter="all">All Products</button>
-                <button class="filter-btn" data-filter="ai">AI-Powered</button>
+                <button class="filter-btn" data-filter="ai">Smart Tools</button>
                 <button class="filter-btn" data-filter="automation">Automation</button>
                 <button class="filter-btn" data-filter="models">Financial Models</button>
                 <button class="filter-btn" data-filter="sheets">Dynamic Tools</button>
@@ -1677,24 +1909,123 @@
         </div>
     </div>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">💬 What People Say</div>
+                <h2 class="section-title reveal">Trusted Across Functions</h2>
+                <p class="section-subtitle reveal">Real feedback from Legal, People Ops, Recruiting, and leadership partners</p>
+            </div>
+
+            <div class="testimonial-carousel reveal">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"We'll prepare the approval based on these files and arrange for signature today."</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <div class="testimonial-name">Ashley</div>
+                            <div class="testimonial-role">Legal Partner</div>
+                            <div class="testimonial-context">Evergreen Grant Approvals</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"The whole team is incredibly grateful for finding ways to speed up delivery and remove possibility for human error through automation."</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Manager</div>
+                            <div class="testimonial-role">Comp Leadership</div>
+                            <div class="testimonial-context">Earnings Automation</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"This can only be replaced by SaaS."</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Manager</div>
+                            <div class="testimonial-role">People Leadership</div>
+                            <div class="testimonial-context">Calibration Tool Review</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"Can you please work with Abhishek on getting these audited and loaded? Thank you!"</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">N</div>
+                        <div>
+                            <div class="testimonial-name">Natalie</div>
+                            <div class="testimonial-role">Comp Operations</div>
+                            <div class="testimonial-context">Sales Transition Bonus Load</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"Thank you, Abhishek! Appreciated!"</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">L</div>
+                        <div>
+                            <div class="testimonial-name">Lily</div>
+                            <div class="testimonial-role">Recruiter</div>
+                            <div class="testimonial-context">Comp Eligibility Guidance</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"We now have a 100% match." — After my validation, Bianca updated the tool and reports based on corrections.</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">B</div>
+                        <div>
+                            <div class="testimonial-name">Bianca</div>
+                            <div class="testimonial-role">People Operations</div>
+                            <div class="testimonial-context">Calibration Data Audit</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"Outcomes beyond expectations." — Consistently rated "Over Delivering" with cross-functional impact.</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">P</div>
+                        <div>
+                            <div class="testimonial-name">Peer</div>
+                            <div class="testimonial-role">Performance Review</div>
+                            <div class="testimonial-context">Annual Review Cycle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-header">
                 <div class="section-badge">🛠️ The Arsenal</div>
                 <h2 class="section-title reveal">Full-Stack People Tech</h2>
-                <p class="section-subtitle reveal">The rare combination of Global Rewards expertise, Product Management, and AI engineering</p>
+                <p class="section-subtitle reveal">Compensation strategy, product building, and technical chops — in one person</p>
             </div>
 
             <div class="skills-grid">
                 <div class="skill-card reveal">
                     <div class="skill-card-header">
                         <div class="skill-icon">🤖</div>
-                        <h3>AI & Automation</h3>
+                        <h3>Automation & LLMs</h3>
                     </div>
                     <div class="skill-list">
                         <div class="skill-item">Claude, OpenAI, Gemini APIs</div>
-                        <div class="skill-item">Glean AI Agents & MCPs</div>
+                        <div class="skill-item">Glean Agents & MCPs</div>
                         <div class="skill-item">n8n, Make, Gumloop workflows</div>
                         <div class="skill-item">LLM prompt engineering</div>
                         <div class="skill-item">NotebookLM, LibreChat</div>
@@ -1780,10 +2111,17 @@
             <div class="section-header">
                 <div class="section-badge">📜 Credentials</div>
                 <h2 class="section-title reveal">Continuous Learning</h2>
-                <p class="section-subtitle reveal">50+ certifications in AI, Product, Data Science, and Total Rewards</p>
+                <p class="section-subtitle reveal">50+ certifications across Product, Data Science, Compensation, and Technical Skills</p>
             </div>
 
             <div class="cert-carousel reveal">
+                <div class="cert-card">
+                    <div class="cert-badge">🏆</div>
+                    <h3>Promoted to Strategy Partner</h3>
+                    <div class="cert-issuer">Opendoor Technologies</div>
+                    <div class="cert-date">Dec 2025</div>
+                </div>
+
                 <div class="cert-card">
                     <div class="cert-badge">🎓</div>
                     <h3>McKinsey Forward Program</h3>
@@ -1887,7 +2225,7 @@
             <div class="contact-content">
                 <div class="section-badge reveal">💬 Let's Connect</div>
                 <h2 class="contact-title reveal">Ready to build <span>systems that scale?</span></h2>
-                <p class="contact-subtitle reveal">I'm looking for roles where I can combine Global Rewards expertise with AI-first product building. Whether it's a Total Rewards leadership position, a People Products PM role, or a strategic consulting opportunity—let's talk about building something extraordinary.</p>
+                <p class="contact-subtitle reveal">I'm looking for roles where compensation strategy and product building go hand in hand — Total Rewards leadership, People Products, or strategic consulting. If you need someone who ships tools, not just analyses, let's talk.</p>
                 <div class="contact-ctas reveal">
                     <a href="https://www.linkedin.com/in/abhishek-bhalotia/" target="_blank" class="btn btn-primary">
                         <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24">
@@ -1915,7 +2253,7 @@
                     <a href="https://www.linkedin.com/in/abhishek-bhalotia/" target="_blank">LinkedIn</a>
                     <a href="mailto:abhishekbhalotia.official@gmail.com">Email</a>
                 </div>
-                <p class="footer-text">© 2026 Abhishek Bhalotia. Products shipped. Systems scaled. Impact delivered.</p>
+                <p class="footer-text">© 2026 Abhishek Bhalotia. Building the systems that build the future of work.</p>
             </div>
         </div>
     </footer>
@@ -1949,17 +2287,17 @@
                 category: "automation ai",
                 icon: "🔗",
                 description: "Live data pipeline eliminating manual Workday report pulls with configurable refresh",
-                details: "Groundbreaking integration: secure Workday-to-Google Sheets API using Apps Script and service accounts. Supports real-time, hourly, daily, or monthly refresh schedules. Eliminates dependency on HRIS for manual report requests. Unlocks AI/automation use cases and powers the calibration and comp-planning tools built on top of live data feeds.",
-                impact: "5 days → instant · Reusable data pipeline · Foundation for AI tools",
+                details: "Secure Workday-to-Google Sheets integration using Apps Script and service accounts. Supports real-time, hourly, daily, or monthly refresh schedules. Eliminates dependency on HRIS for manual report requests. Powers the calibration and comp-planning tools built on top of live data feeds.",
+                impact: "5 days → instant · Reusable data pipeline · Foundation for downstream tools",
                 tech: ["Apps Script", "Workday REST API", "Service Accounts", "OAuth"]
             },
             {
                 id: 4,
-                title: "AI Recruiting Copilot",
+                title: "Recruiting Copilot",
                 category: "ai",
                 icon: "🤖",
-                description: "Glean-based AI assistant providing self-serve comp guidance to TA and hiring managers",
-                details: "Designed AI-powered recruiting assistant in Glean that reasons over job catalogs, leveling guides, comp ranges, and policy content. Proposes calibrated titles/ranges, generates JD content, and answers comp Q&A. Transforms high-touch Comp advisory into self-serve copilot. Now deployed company-wide with version 2.0 (NotebookLM) 10x faster.",
+                description: "Glean-based assistant giving recruiters and hiring managers self-serve comp guidance",
+                details: "Built a Glean-based assistant that reasons over job catalogs, leveling guides, comp ranges, and policy content. Proposes calibrated titles/ranges, generates JD content, and answers comp Q&A — so recruiters don't have to wait for the Comp team. Deployed company-wide; v2.0 (NotebookLM) is significantly faster.",
                 impact: "Self-serve for TA & HMs · Faster req creation · Consistent pay equity guardrails",
                 tech: ["Glean", "LLM", "MCP", "NotebookLM", "Job Catalog"]
             },
@@ -2058,19 +2396,19 @@
                 title: "Glean Performance Guides",
                 category: "ai",
                 icon: "📖",
-                description: "AI enablement guides deployed company-wide for self-serve performance management",
-                details: "Created quick reference guides enabling company-wide AI adoption for performance cycles. Includes self-assessment completion with Glean, manager evaluation guidance, and full performance management cycle using AI. Part of broader AI-first culture transformation.",
-                impact: "Company-wide enablement · 3 QRGs created · Self-serve AI adoption",
-                tech: ["Glean", "Documentation", "Change Management", "AI Training"]
+                description: "Quick reference guides enabling self-serve performance management with Glean",
+                details: "Created quick reference guides helping employees and managers use Glean effectively during performance cycles. Covers self-assessment completion, manager evaluation guidance, and full performance management workflows. Reduced repeated questions to the Comp team during review season.",
+                impact: "Company-wide enablement · 3 QRGs created · Fewer repeat questions",
+                tech: ["Glean", "Documentation", "Change Management", "Training"]
             },
             {
                 id: 15,
                 title: "Market Analysis Suite",
                 category: "models ai",
                 icon: "🎯",
-                description: "AI-assisted market data profiling for Radford submissions and FY26 range updates",
-                details: "Led 2025 Radford survey submissions with AI/LLM workflows to rapidly profile large RMCD market files, sanity-check percentile patterns, and pressure-test job-family code mappings against internal architecture. Materially reduced manual data-crunching time while improving consistency.",
-                impact: "Multiple survey studies · AI-assisted profiling · FY26 range updates delivered",
+                description: "LLM-assisted market data profiling for Radford submissions and FY26 range updates",
+                details: "Led 2025 Radford survey submissions with LLM workflows to rapidly profile large RMCD market files, sanity-check percentile patterns, and pressure-test job-family code mappings against internal architecture. Materially reduced manual data-crunching time while improving consistency.",
+                impact: "Multiple survey studies · LLM-assisted profiling · FY26 range updates delivered",
                 tech: ["Market Data", "Radford", "LLM Workflows", "Range Analysis"]
             },
             {
@@ -2095,13 +2433,33 @@
             },
             {
                 id: 18,
-                title: "98-Country IC Operations",
+                title: "Pfizer Global IC Design",
                 category: "models",
                 icon: "🌍",
-                description: "Primary owner of ZAIDYN IC system for Pfizer Global across 4 regions",
-                details: "At ZS Associates, led incentive compensation operations for Pfizer Global spanning 4 regions and 98 countries. Primary owner of ZAIDYN IC Design system—first-time IC Design work mastered in weeks. Led development, testing, and multi-country data validation with 100% accuracy and zero defects.",
-                impact: "98 countries · 4 regions · 100% accuracy · Zero defects",
-                tech: ["ZAIDYN IC", "Javelin", "Multi-country Operations", "Testing"]
+                description: "Standardized incentive calc methodologies for Pfizer across 4 regions, scalable to 98 countries",
+                details: "Key POC and primary owner of Pfizer's ZAIDYN IC Design system. Built lean, standardized calculation methodologies for quota setting, incentive calcs, and awards & contests — designed once, then scaled across 98 countries without rework. Led development, testing, and multi-country data validation. Delivered every cycle with zero defects.",
+                impact: "Scalable to 98 countries · 4 regions · Standardized methodologies · Zero defects",
+                tech: ["ZAIDYN IC", "Javelin", "Standardized Calcs", "Multi-country Ops"]
+            },
+            {
+                id: 19,
+                title: "Comp Bot",
+                category: "ai",
+                icon: "💬",
+                description: "Glean agent that auto-answers compensation questions for recruiters and People Partners",
+                details: "Built a Glean-based agent that answers compensation questions using internal job catalogs, leveling guides, comp ranges, and policy docs. Recruiters and People Partners get instant answers instead of waiting for the Comp team. Includes role-based access control so sensitive data stays protected.",
+                impact: "Self-serve comp answers · Reduced Comp team tickets · Access-controlled",
+                tech: ["Glean", "Agent", "RBAC", "Knowledge Base"]
+            },
+            {
+                id: 20,
+                title: "Earnings Buddy (Gemini Gem)",
+                category: "ai",
+                icon: "🧠",
+                description: "Gemini-powered assistant that streamlines earnings-related queries and analysis",
+                details: "Created 'Earnings Buddy' — a custom Gemini Gem for earnings-related queries. Part of a broader toolkit of specialized helpers integrated into the team's daily workflows. Works alongside Glean agents and LibreChat for prompt crafting and content generation.",
+                impact: "Instant earnings analysis · Reduced manual lookups · Team-wide adoption",
+                tech: ["Gemini", "Custom Gem", "Earnings Data", "Automation"]
             }
         ];
 
@@ -2149,12 +2507,12 @@
 
         // ENHANCED Typing Animation with impact-driven phrases
         const typingPhrases = [
-            "$50M+ savings through dynamic models",
-            "5-day processes → instant automation",
-            "98 countries, zero defects",
-            "AI copilots deployed company-wide",
-            "SaaS-grade tools in Google Workspace",
-            "100% payout accuracy maintained"
+            "HC model used by the CEO, CPO, and CFO",
+            "5-day earnings process → instant",
+            "Lean IC systems scaled to 98 countries",
+            "Comp Bot answering questions company-wide",
+            "Calibration tool managers call SaaS-grade",
+            "100% payout accuracy, every cycle"
         ];
 
         let phraseIndex = 0;
@@ -2208,7 +2566,9 @@
                         current = target;
                         clearInterval(timer);
                     }
-                    if (target === 50) {
+                    if (target === 20) {
+                        counter.textContent = Math.floor(current) + '+';
+                    } else if (target === 50) {
                         counter.textContent = '$' + Math.floor(current) + 'M+';
                     } else if (target === 98 && !text.includes('%')) {
                         counter.textContent = Math.floor(current);
